@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-               git branch: 'main', credentialsId: 'javahometech', url: 'https://github.com/javahometech/lms'
+               git branch: 'main', url: 'https://github.com/Darkmatter85/jenkins.git'
             }
         }
         stage('Maven Build') {
